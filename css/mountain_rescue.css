@@ -1,0 +1,52 @@
+
+ 
+ html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top:0;
+            width: 80.0%;
+            left: 7.5%;
+            padding: 1%;
+            fill: white
+
+        }
+
+        section, footer {
+            position: relative;
+            width: 80.0%;
+            left: 7.5%;
+            padding: 1%;
+
+        }
+
+
+        .chartholder {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            left: 5%;
+            top: 0.0%;
+
+        }
+
+        .square {
+            width:16px;
+            height:16px; 
+            display: inline-block;
+
+        }
+
+        .myImage {
+            float: right;
+            margin: 50px 50px 15px 20px;
+
+
+        }

@@ -1,15 +1,43 @@
 // chart setting
 export const chart_heatmap = {
   'height' : 90,
-  'width' : 230
+  'width' : 410
 }
 
+export const margin = {
+    'horizontal': 20,
+    'vertical':20
+
+}
+
+export const chart = {
+    'width': `${chart_heatmap.width + margin.horizontal*2}`,
+    'height': `${chart_heatmap.height + margin.vertical*2}`,
+}
+
+export const svg = d3.select('#logo')
+        .append('svg')
+            .attr('id','logo')
+            .attr('viewBox',`0 0 ${chart.width} ${chart.height}`)
+            // .style('border','0.5px solid black');
+
+    console.log('this is svg')
+    console.log(svg)
+
+export const innerChart = svg.append('g')
+            .attr('class','innerChart')
+            .attr('transform', d=> `translate(${margin.horizontal}, ${margin.vertical})`)
+
+
+
+
+
 export const xScale = d3.scaleLinear()
-        .domain([0,22])
+        .domain([0,41])
         .range([0,chart_heatmap.width])
     
 export const yScale = d3.scaleLinear()
-        .domain([-1,8])
+        .domain([0,9])
         .range([chart_heatmap.height,0])
 
 // export const colorScale = d3.scaleOrdinal()

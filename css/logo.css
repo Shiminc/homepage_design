@@ -1,0 +1,24 @@
+
+.logoholder{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 10%;
+    height: 10%;
+    left: 0%;
+    top: 0.0%;
+}
+
+.logoholder:hover{
+    cursor:pointer;
+}
+
+.axis-x line,
+.axis-x path,
+.axis-y path,
+.axis-y line {
+  fill: none;
+  stroke: black;
+  stroke-width: 3px;
+  shape-rendering: crispEdges;}
+
