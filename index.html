@@ -16,7 +16,7 @@
         <meta property="og:url" content="https://shiminc.github.io/UK_diversity_mapping/">
         <meta property="og:description" content="Choropleth map illustrating diversity in England/Wales based on ONS country of birth data"> -->
         <meta property="og:locale" content="en_UK">
-        <base target="_blank">
+        <!-- <base target="_blank"> -->
 
         <link rel="stylesheet" href="css/homepage.css">
 
@@ -26,10 +26,41 @@
         </script>
     </head>
     <body>
-        <div class = 'main_logoholder' id ='logo'></div>
+        <header>
+            <div class = "grid-nav-container">
+                <div class = 'grid-tagline'>My visualisation journey</div>
+                <div class = 'grid-about'><a href='../about.html'>About</a></div>
+            </div>
+                <div class = 'main_logoholder' id ='logo'></div>
+        </header>
+
+        <div class = 'grid-project-container'>
+            <div class = 'grid-project-1'>
+                <div class = 'project-title'> Mapping UK diversity</div>
+                <div class = 'project-preview-container'>
+                    <a href = 'projects/UK_diversity.html'>
+                    <img src="../assets/UK_diversity.png">
+                    </a>
+                </div>
+                <div class = 'project-summary'>How diverse is the UK society? In this choropleth map with pop-up detailed census data, I showed that it is a complex story, depending on where you are.</div>
+
+            </div>
+            <div class = 'grid-project-2'>
+                <div class = 'project-title'> Mountain Rescue</div>
+                <div class = 'project-preview-container'>
+                    <a href = 'projects/mountain_rescue.html'>
+                    <img src="../assets/mountain_rescue.png">
+                    </a>
+                </div>
+                <div class = 'project-summary'>I like hiking, especially in Lake District. I am grateful I never had any accident although there were some nerve-wrecking moment when I accidentally went the wrong way. Nonetheless, there are times some walkers need help, and the amazing mountain rescuers come to their rescue. So I have made a visualisation to illustrate their hardwork.</div>
+            </div>
+        <!-- <div class = 'grid-project-3'></div>
+        <div class = 'grid-project-4'></div> -->
+
+    </div>
+
 
         <script src="javascripts/d3.v7.js"></script>
-
         <script type="module" src="javascripts/logo/main.js"></script> 
 
     </body>

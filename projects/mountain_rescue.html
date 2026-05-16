@@ -46,17 +46,19 @@
     
     
     <header>
-    <div class = 'logoholder' id ='logo' ></div>
-    <script>
-        document.getElementById('logo').addEventListener('click', function(){
-            window.location.href ='../index.html'
-        })
-    </script>
+    <div class = "grid-nav-container">
+        <div class = 'grid-logo' id ='logo' ></div>
+        <!-- <div class = 'grid-space'></div> -->
+        <div class = 'grid-about'><a href='../about.html'>About</a></div>
+
+    </div>
     <h1>Mountain Rescue Team works for free for our leisure and safety</h1>
-    <p>SHI MIN CHUA</p>
 
     </header>
+
     <main>
+
+
         <p> At the beginning of 2026, an outpouring of donation has been made to <a href="https://www.wmrt.org.uk/", target="_blank">Wasdale Mountain Rescue Team</a> to help cover the cost of hotel fee after <a href="https://www.bbc.co.uk/news/articles/c9vx0jrnmejo#:~:text=Wasdale%20Mountain%20Rescue%20Team%20said,29%20December%2C%20in%20%22treacherous%22%20conditions.", target="_blank">news</a> of two walkers not paying the hotel after the team rescued them and arranged for them to spend the night in the hotel. 
             However, the cost of the rescue is not limited to the hotel fee.           
             According to the <a href="https://www.wmrt.org.uk/incidents/corridor-route-scafell-pike-mon-29th-dec-2025/", target="_blank">incident report</a>, the rescue
@@ -173,9 +175,17 @@
     </footer>
     </body>
 
-<!-- Script for other charts -->
+<!-- Script for logo -->
 <script src="../javascripts/d3.v7.js"></script>
 <script type="module" src="../javascripts/logo/main.js"></script> 
+<script>
+        document.getElementById('logo').addEventListener('click', function(){
+            window.location.href ='../index.html'
+        })
+</script>
+
+<!-- Script for other charts -->
+
 <script type="text/javascript">
         var spec = "https://raw.githubusercontent.com/Shiminc/mountain_rescue/main/charts/main_chart.json";
         vegaEmbed('#bubble', spec,{'loader':{'target':'_blank'}}).then(function(result) {

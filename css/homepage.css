@@ -1,23 +1,26 @@
+body {
+        height:fit-content; 
+        padding: 0;
+        }
+
+header {
+    top:0;
+    position: sticky;
+    background: rgba(255, 255, 255, 1);
+    /* make it always in front */
+    z-index:9000;
+
+}
+
 .main_logoholder{
-    position: relative;
+    position: sticky;
     display: flex;
     justify-content: left;
     width: 100%;
     height: 100%;
     left: 0%;
-    top: 0.0%;
-
-
-}
-
-.logoholder{
-    position: relative;
-    display: flex;
-    justify-content: left;
-    width: 10%;
-    height: 10%;
-    left: 0%;
-    top: 0.0%;
+    top: 0%;
+    margin-bottom: 1rem;
 
 
 }
@@ -31,3 +34,91 @@
   stroke-width: 0.5px;
   shape-rendering: crispEdges;}
 
+.grid-nav-containe{
+    color: gray;
+}
+
+.grid-about {
+    font-size: 1.5rem;
+
+    /* margin-top: auto;
+    margin-bottom: 0;
+    margin-left: auto; 
+    margin-right: 0;     */
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 5%;
+
+}
+
+.grid-about a:link{
+    color: gray;
+    text-decoration: none;
+
+}
+
+.grid-about a:visited{
+    color: rgb(52, 49, 49);
+    text-decoration: none;
+}
+
+.grid-tagline{
+    font-size: 1.5rem;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    /* max-width: 400px; */
+    /* width: 10%;
+    height: 10%; */
+    left: 5%;
+    /* border-bottom : black 5px solid; */
+
+}
+
+.grid-nav-container {
+    margin-top: 1rem;
+    display: grid;
+    /* grid-template-columns:400px 1000px 200px; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-rows: 100px; */
+    grid-gap: 20px;
+}
+
+.grid-project-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    grid-gap: 200px;
+    grid-template-rows: 750px;
+    /* background: gray; */
+}
+
+/* .grid-project-container > div {
+    border:gray 1px solid;
+} */
+
+.project-preview-container {
+    width:500px;
+    height:500px;
+}
+
+.project-preview-container img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.project-summary {
+    padding: 1rem;
+    font-size: 1.25rem;
+
+}

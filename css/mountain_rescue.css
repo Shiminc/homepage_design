@@ -1,11 +1,13 @@
+/* html {
+        max-width: 2000px;
+        margin: auto;
 
+} */
  
-html,body {
-        width: 100%;
-        height:fit-content;
-        margin: 0;
+body {
+        /* width: 100%; */
         padding: 0;
-    }
+        }
 
 header {
     position: sticky;
@@ -14,7 +16,10 @@ header {
     left: 7.5%;
     padding: 1%;
     background: rgba(255, 255, 255, 1);
+    /* make it always in front */
     z-index:9000;
+    border-bottom : gray 1px solid;
+
 }
 
 main, footer {
